@@ -1,0 +1,25 @@
+﻿@model storeProcedure.Models.SpData
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr><td><td>Id</td><td>@Html.TextBoxFor(a => a.Id)</td></tr>
+                <tr><td><td>Name</td><td>@Html.TextBoxFor(a => a.Name)</td></tr>
+                <tr><td><td>Email</td><td>@Html.TextBoxFor(a => a.Email)</td></tr>
+                <tr><td><td></td><td><input type="submit" name="btnsubmit" value="Insert" /></td></tr>
+            </table>
+        }
+
+    </div>
+</body>
+</html>
